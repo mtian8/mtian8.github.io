@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Minyang Tian — researcher in large language models, reinforcement learning, and AI for science. SciCode, CritPt, and scientific AI at scale.">
+  <meta name="theme-color" content="#fdfdfd">
+  <title>Minyang Tian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap">
+  <style>
+    :root {
+      --text: #222;
+      --secondary: #717171;
+      --accent: #3d7c98;
+      --accent-hover: #2c5e75;
+      --rule: #e8e8e8;
+      --background: #fdfdfd;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      color: var(--text);
+      background: var(--background);
+      font-family: "Source Sans 3", "Source Sans Pro", -apple-system, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page { max-width: 680px; margin: 0 auto; padding: 0 2rem; }
+    header { padding-top: 4rem; margin-bottom: .5rem; }
+    h1 { font-size: 2rem; font-weight: 400; letter-spacing: -.01em; margin-bottom: .1rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; padding: 1.5rem 0; border-bottom: 1px solid var(--rule); margin-bottom: 2.5rem; }
+    nav a { color: var(--secondary); font-size: .9rem; }
+    nav a:hover { color: var(--text); }
+    a { color: var(--accent); text-decoration: none; transition: color .2s; }
+    a:hover { color: var(--accent-hover); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 1px; }
+    .skip-link { position: absolute; top: -4rem; left: 1rem; background: var(--background); padding: .25rem .75rem; }
+    .skip-link:focus { top: .5rem; }
+    #about { margin-bottom: 2.75rem; }
+    section { padding: 2.25rem 0; border-top: 1px solid var(--rule); }
+    [id] { scroll-margin-top: 2rem; }
+    h2 { color: var(--secondary); font-size: .82rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 1.25rem; }
+    h3 { font-size: 1.02rem; font-weight: 600; margin: 1.5rem 0 .3rem; }
+    h3:first-of-type { margin-top: 0; }
+    p { margin-bottom: .9rem; }
+    p:last-child { margin-bottom: 0; }
+    strong { font-weight: 600; }
+    .publications { list-style: none; }
+    .publications li + li { margin-top: 1.65rem; }
+    .publications h3 { margin: 0 0 .2rem; }
+    .authors, .publication-note { font-size: .95rem; line-height: 1.65; }
+    .publication-note { color: var(--secondary); margin-top: .2rem; }
+    .author-note { color: var(--secondary); font-size: .82rem; margin-top: 1.25rem; }
+    footer { color: var(--secondary); padding: 2.5rem 0; font-size: .78rem; letter-spacing: .02em; }
+    @media (max-width: 600px) {
+      .page { padding: 0 1.25rem; }
+      header { padding-top: 2.5rem; }
+      h1 { font-size: 1.65rem; }
+      nav { gap: .5rem 1.25rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      a { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+  <div class="page">
+    <header>
+      <h1>Minyang Tian</h1>
+    </header>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <div id="about" tabindex="-1">
+        <p>
+          I push the frontier of AI for scientific discovery by developing benchmarks.<br>
+          I'm a physicist by training. I am currently a founding member of Mercor's Research Team.
+        </p>
+      </div>
+
+      <section id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+
+        <ol class="publications">
+          <li>
+            <h3><a href="https://arxiv.org/abs/2509.26574">Probing the Critical Point (CritPt)</a></h3>
+            <div class="authors">
+              Minhui Zhu*, <strong>Minyang Tian*</strong>, Xiaocheng Yang, …, Eliu Huerta, Hao Peng.
+            </div>
+            <div class="publication-note">
+              Featured in the releases of:
+              <a href="https://openai.com/index/introducing-gpt-5-5/" title="The GPT-5.5 release reports the Artificial Analysis index, which includes CritPt.">GPT-5.5</a>,
+              <a href="https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card#page=173" title="The Claude Fable 5.1 system card evaluates an adapted version, CritPt-Corrected.">Claude Fable 5.1</a>,
+              <a href="https://huggingface.co/moonshotai/Kimi-K3">Kimi K3</a>,
+              and <a href="https://z.ai/blog/glm-5.2">GLM-5.2</a>.
+            </div>
+          </li>
+          <li>
+            <h3><a href="https://arxiv.org/abs/2407.13168">SciCode</a></h3>
+            <div class="authors">
+              <strong>Minyang Tian*</strong>, Luyu Gao*, Shizhuo Dylan Zhang, …, Eliu Huerta, Hao Peng.
+            </div>
+            <div class="publication-note">NeurIPS 2024</div>
+            <div class="publication-note">
+              Featured in the releases of:
+              <a href="https://openai.com/index/introducing-gpt-5-5/" title="The GPT-5.5 release reports the Artificial Analysis index, which includes SciCode.">GPT-5.5</a>,
+              <a href="https://deepmind.google/models/model-cards/gemini-3-1-pro/">Gemini 3.1 Pro</a>,
+              <a href="https://huggingface.co/moonshotai/Kimi-K3">Kimi K3</a>,
+              and <a href="https://qwen.ai/blog?id=qwen3.6-max-preview">Qwen3.6-Max-Preview</a>.
+            </div>
+          </li>
+          <li>
+            <h3><a href="https://www.nature.com/articles/s41586-025-10072-4">OpenScholar</a></h3>
+            <div class="authors">Akari Asai, Jacqueline He, Rulin Shao, …, <strong>Minyang Tian</strong>, …, Pang Wei Koh, Hannaneh Hajishirzi.</div>
+            <div class="publication-note">Nature 2026</div>
+          </li>
+        </ol>
+        <p class="author-note">* Co-first authors.</p>
+        <p>For the full list of publications, please see my <a href="https://scholar.google.com/citations?user=Bzl5qN8AAAAJ&amp;hl=en">Google Scholar</a>.</p>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>
+          Please reach out to <a href="mailto:mtian8@illinois.edu">mtian8@illinois.edu</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>© 2026 Minyang Tian</footer>
+  </div>
+
+
+</body></html>
